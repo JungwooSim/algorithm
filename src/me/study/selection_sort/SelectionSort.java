@@ -10,8 +10,8 @@ public class SelectionSort {
     }
 
     public void selection() {
-        int lowest = 0;
-        int swapValue = 0;
+        int lowest;
+        int swapValue;
         for (int stand = 0; stand < data.length; stand++) {
             lowest = stand;
             for (int index = stand+1; index < data.length; index++) {
