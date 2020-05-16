@@ -1,8 +1,8 @@
 package me.study;
 
-import me.study.bubble_sort.BubbleSort;
-import me.study.insertion_sort.InsertionSort;
-import me.study.selection_sort.SelectionSort;
+import me.study.recursivecall.RecursiveCall;
+
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
@@ -28,9 +28,30 @@ public class Main {
         /*
         Insertion Sort
          */
-        InsertionSort insertionSort = new InsertionSort(data);
-        System.out.println("before : " + insertionSort);
-        insertionSort.insertion();
-        System.out.println("after : " + insertionSort);
+//        InsertionSort insertionSort = new InsertionSort(data);
+//        System.out.println("before : " + insertionSort);
+//        insertionSort.insertion();
+//        System.out.println("after : " + insertionSort);
+
+        /*
+        Recursive Call
+         */
+        RecursiveCall recursiveCall = new RecursiveCall(data);
+        System.out.println("예제1. Factorial");
+        recursiveCall.recursive();
+        System.out.println("----------");
+        System.out.println("예제2. 1부터 n 까지의 곱을 출력되게 만들기");
+        System.out.println(recursiveCall.multiple(3));
+        System.out.println("----------");
+        System.out.println("예제3. 숫자가 들어 있는 리스트가 주어졌을 때, 리스트의 합을 리턴하는 함수 만들기");
+        ArrayList<Integer> sumListData = new ArrayList<>();
+        for (int i=0; i<100; i++) {
+            sumListData.add(i);
+        }
+        System.out.println(recursiveCall.sumList(sumListData));
+        System.out.println("----------");
+        System.out.println("예제4. palindrome(회문)을 판별하는 함수 만들기");
+        String name = "level";
+        System.out.println(recursiveCall.palindrome(name));
     }
 }
