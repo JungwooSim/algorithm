@@ -43,6 +43,7 @@ public class Main {
         System.out.println("예제2. 1부터 n 까지의 곱을 출력되게 만들기");
         System.out.println(recursiveCall.multiple(3));
         System.out.println("----------");
+
         System.out.println("예제3. 숫자가 들어 있는 리스트가 주어졌을 때, 리스트의 합을 리턴하는 함수 만들기");
         ArrayList<Integer> sumListData = new ArrayList<>();
         for (int i=0; i<100; i++) {
@@ -50,6 +51,7 @@ public class Main {
         }
         System.out.println(recursiveCall.sumList(sumListData));
         System.out.println("----------");
+
         System.out.println("예제4. palindrome(회문)을 판별하는 함수 만들기");
         String name = "level";
         System.out.println(recursiveCall.palindrome(name));
