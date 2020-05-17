@@ -1,5 +1,6 @@
 package me.study;
 
+import me.study.dynamicprogramming.DynamicProgramming;
 import me.study.recursivecall.RecursiveCall;
 
 import java.util.ArrayList;
@@ -55,19 +56,27 @@ public class Main {
 //        System.out.println("예제4. palindrome(회문)을 판별하는 함수 만들기");
 //        String name = "level";
 //        System.out.println(recursiveCall.palindrome(name));
-        System.out.println("----------");
-        System.out.println("예제5. 정수 n에 대하여, n이 홀수이면 3 X n + 1 을 하고 n이 짝수이면 n / 2를 한다. 이렇게 계속 진행하여 n 이 결국 1 이 될 때까지 반복한다.예제5. 정수 n에 대하여, n이 홀수이면 3 X n + 1 을 하고 n이 짝수이면 n / 2를 한다. 이렇게 계속 진행하여 n 이 결국 1 이 될 때까지 반복한다.예제5. 정수 n에 대하여, n이 홀수이면 3 X n + 1 을 하고 n이 짝수이면 n / 2를 한다. 이렇게 계속 진행하여 n 이 결국 1 이 될 때까지 반복한다.예제5. 정수 n에 대하여, n이 홀수이면 3 X n + 1 을 하고 n이 짝수이면 n / 2를 한다. 이렇게 계속 진행하여 n 이 결국 1 이 될 때까지 반복한다.");
-        recursiveCall.example_5(3);
-        System.out.println("----------");
-        System.out.println("예제6. 정수 4를 1, 2, 3의 조합으로 나타내는 방법은 다음과 같이 총 7가지가 있다.");
-        System.out.println("1+1+1+1");
-        System.out.println("1+1+2");
-        System.out.println("1+2+1");
-        System.out.println("2+1+1");
-        System.out.println("2+2");
-        System.out.println("1+3");
-        System.out.println("3+1");
-        System.out.println("정수 n 이 입력으로 주어졌을 때, n을 1, 2, 3의 합으로 나타낼 수 있는 방법의 수를 구하시오.");
-        System.out.println(recursiveCall.example_6(4));
+//        System.out.println("----------");
+//        System.out.println("예제5. 정수 n에 대하여, n이 홀수이면 3 X n + 1 을 하고 n이 짝수이면 n / 2를 한다. 이렇게 계속 진행하여 n 이 결국 1 이 될 때까지 반복한다.예제5. 정수 n에 대하여, n이 홀수이면 3 X n + 1 을 하고 n이 짝수이면 n / 2를 한다. 이렇게 계속 진행하여 n 이 결국 1 이 될 때까지 반복한다.예제5. 정수 n에 대하여, n이 홀수이면 3 X n + 1 을 하고 n이 짝수이면 n / 2를 한다. 이렇게 계속 진행하여 n 이 결국 1 이 될 때까지 반복한다.예제5. 정수 n에 대하여, n이 홀수이면 3 X n + 1 을 하고 n이 짝수이면 n / 2를 한다. 이렇게 계속 진행하여 n 이 결국 1 이 될 때까지 반복한다.");
+//        recursiveCall.example_5(3);
+//        System.out.println("----------");
+//        System.out.println("예제6. 정수 4를 1, 2, 3의 조합으로 나타내는 방법은 다음과 같이 총 7가지가 있다.");
+//        System.out.println("1+1+1+1");
+//        System.out.println("1+1+2");
+//        System.out.println("1+2+1");
+//        System.out.println("2+1+1");
+//        System.out.println("2+2");
+//        System.out.println("1+3");
+//        System.out.println("3+1");
+//        System.out.println("정수 n 이 입력으로 주어졌을 때, n을 1, 2, 3의 합으로 나타낼 수 있는 방법의 수를 구하시오.");
+//        System.out.println(recursiveCall.example_6(4));
+
+        /*
+        DynamicProgramming
+         */
+        DynamicProgramming dynamicProgramming = new DynamicProgramming();
+        System.out.println("fibonacciSequence With RecursiveCall : " + dynamicProgramming.fibonacciSequence(10));
+        System.out.println("fibonacciSequence With DynamicProgramming : " + dynamicProgramming.fibonacciSequence_DP(10));
+
     }
 }
