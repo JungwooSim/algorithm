@@ -50,4 +50,26 @@ public class RecursiveCall {
             return false;
         }
     }
+
+    public Integer example_5(Integer value) {
+        System.out.println(value);
+        if (value == 1) {
+            return value;
+        } else {
+            if (value % 2 == 1) {
+                return example_5(3 * value + 1);
+            } else {
+                return example_5(value / 2);
+            }
+        }
+    }
+
+    public Integer example_6(Integer value) {
+        switch (value) {
+            case 1 : return 1;
+            case 2 : return 2;
+            case 3 : return 4;
+            default: return example_6(value - 1) + example_6(value - 2) + example_6(value - 3);
+        }
+    }
 }
