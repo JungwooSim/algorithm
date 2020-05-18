@@ -1,6 +1,7 @@
 package me.study;
 
 import me.study.dynamicprogramming.DynamicProgramming;
+import me.study.quick_sort.QuickSort;
 import me.study.recursivecall.RecursiveCall;
 
 import java.util.ArrayList;
@@ -74,9 +75,17 @@ public class Main {
         /*
         DynamicProgramming
          */
-        DynamicProgramming dynamicProgramming = new DynamicProgramming();
-        System.out.println("fibonacciSequence With RecursiveCall : " + dynamicProgramming.fibonacciSequence(10));
-        System.out.println("fibonacciSequence With DynamicProgramming : " + dynamicProgramming.fibonacciSequence_DP(10));
+//        DynamicProgramming dynamicProgramming = new DynamicProgramming();
+//        System.out.println("fibonacciSequence With RecursiveCall : " + dynamicProgramming.fibonacciSequence(10));
+//        System.out.println("fibonacciSequence With DynamicProgramming : " + dynamicProgramming.fibonacciSequence_DP(10));
+
+        /*
+        Quick Sort
+         */
+        ArrayList<Integer> dataList = new ArrayList<>();
+        dataList.add(3);dataList.add(2);dataList.add(1);dataList.add(9);dataList.add(8);dataList.add(6);dataList.add(4);dataList.add(7);
+        QuickSort quickSort = new QuickSort();
+        System.out.println(quickSort.quick(dataList));
 
     }
 }
