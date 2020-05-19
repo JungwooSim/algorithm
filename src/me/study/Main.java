@@ -1,6 +1,7 @@
 package me.study;
 
 import me.study.dynamicprogramming.DynamicProgramming;
+import me.study.merge_sort.MergeSort;
 import me.study.quick_sort.QuickSort;
 import me.study.recursivecall.RecursiveCall;
 
@@ -9,7 +10,9 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         int[] data = {3,2,1,9,8,6,4,7};
-//        int[] data = {3,2,1};
+
+        ArrayList<Integer> dataList = new ArrayList<>();
+        dataList.add(3);dataList.add(2);dataList.add(1);dataList.add(9);dataList.add(8);dataList.add(6);dataList.add(4);dataList.add(7);
 
         /*
         Bubble Sort
@@ -82,10 +85,16 @@ public class Main {
         /*
         Quick Sort
          */
-        ArrayList<Integer> dataList = new ArrayList<>();
-        dataList.add(3);dataList.add(2);dataList.add(1);dataList.add(9);dataList.add(8);dataList.add(6);dataList.add(4);dataList.add(7);
-        QuickSort quickSort = new QuickSort();
-        System.out.println(quickSort.quick(dataList));
+//        ArrayList<Integer> dataList = new ArrayList<>();
+//        QuickSort quickSort = new QuickSort();
+//        System.out.println("before : " + dataList);
+//        System.out.println("after : " + quickSort.quick(dataList));
 
+        /*
+        Merge Sort
+         */
+        MergeSort mergeSort = new MergeSort();
+        System.out.println("before : " + dataList);
+        System.out.println("after : " + mergeSort.split(dataList));
     }
 }
