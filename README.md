@@ -121,6 +121,7 @@ palindrome이란, 앞으로 읽으나 거꾸로 읽으나 동일한 단어 또�
 - 따라서, 단계별 시간 복잡도는 O(n) * O(log n) 이므로 O(n log n) 이 된다.
 <img src="/img/merge_img_1.png" style="width:500px;">
 - - -
+
 ### Binary Search
 
 **Divide and Conquer AND Binary Search**
