@@ -1,5 +1,6 @@
 package me.study;
 
+import me.study.binary_search.BinarySearch;
 import me.study.dynamicprogramming.DynamicProgramming;
 import me.study.merge_sort.MergeSort;
 import me.study.quick_sort.QuickSort;
@@ -93,8 +94,18 @@ public class Main {
         /*
         Merge Sort
          */
-        MergeSort mergeSort = new MergeSort();
-        System.out.println("before : " + dataList);
-        System.out.println("after : " + mergeSort.split(dataList));
+//        MergeSort mergeSort = new MergeSort();
+//        System.out.println("before : " + dataList);
+//        System.out.println("after : " + mergeSort.split(dataList));
+
+        /*
+        Binary Search
+         */
+        BinarySearch binarySearch = new BinarySearch();
+        Integer[] sortedData = {1,2,3,4,5,6,7,8,9,10};
+//        System.out.println(binarySearch.binary(sortedData, 10));
+        for (Integer value : sortedData) {
+            System.out.println(binarySearch.binary(sortedData, value));
+        }
     }
 }
