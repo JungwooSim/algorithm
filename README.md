@@ -135,34 +135,13 @@ palindrome이란, 앞으로 읽으나 거꾸로 읽으나 동일한 단어 또�
         - ( search value > 중간 값 ) 일 때, 리스트의 '앞 부분' 부터 다시 찾는다.
     - 정렬이 되어 있다는 가정이 필요
 
-**분석**<br>
+**분석**
+
 - n개의 리스트를 매번 2로 나누어 1이 될 때까지 비교 연산을 k회 진행
     - n * 1/2 * 1/2 * ... = 1
     - n * (1/2)^k = 1
     - n = 2^k = log_2 n = log_2 2^k
     - log_2 n = k
     - Big-O : O(log n + 1)이므로 상수를 제거하면
-    Big-O : O(log n)### Binary Search
-                    
-                    **Divide and Conquer AND Binary Search**
-                    
-                    - Divide and Conquer
-                        - Divide : 문제를 하나 또는 둘 이상으로 나눈다.
-                        - Conquer : 나눠진 문제가 충분히 작고, 해결 가능하다면 해결하고, 그렇지 않다면 다시 나눈다.
-                    - Binary Search
-                        - Divide : 리스트를 두 개의 서브 리스트로 나눈다.
-                        - Conquer
-                            - ( search value > 중간 값 ) 일 때, 리스트의 '뒷 부분' 부터 다시 찾는다.
-                            - ( search value > 중간 값 ) 일 때, 리스트의 '앞 부분' 부터 다시 찾는다.
-                        - 정렬이 되어 있다는 가정이 필요
-                    
-                    **분석**
-                    
-                    - n개의 리스트를 매번 2로 나누어 1이 될 때까지 비교 연산을 k회 진행
-                        - n * 1/2 * 1/2 * ... = 1
-                        - n * (1/2)^k = 1
-                        - n = 2^k = log_2 n = log_2 2^k
-                        - log_2 n = k
-                        - Big-O : O(log n + 1)이므로 상수를 제거하면
-                        Big-O : O(log n)
+    Big-O : O(log n)
 - - -
