@@ -119,9 +119,8 @@ palindrome이란, 앞으로 읽으나 거꾸로 읽으나 동일한 단어 또�
 - 따라서, 각 단계는 항상 2^i * n / 2^i = O(n)
 - 단계는 항상 log_2 n 개 만들어 진다. 시간 복잡도는 O(log n) 이 된다. (2는 상수이므로 삭제)
 - 따라서, 단계별 시간 복잡도는 O(n) * O(log n) 이므로 O(n log n) 이 된다.
-<img src="/img/merge_img_1.png" style="width:500px;">
+<img src="/img/merge_img_1.png" width="500px;">
 - - -
-
 ### Binary Search
 
 **Divide and Conquer AND Binary Search**
@@ -145,4 +144,12 @@ palindrome이란, 앞으로 읽으나 거꾸로 읽으나 동일한 단어 또�
     - log_2 n = k
     - Big-O : O(log n + 1)이므로 상수를 제거하면
     Big-O : O(log n)
+- - -
+### Sequential Search
+
+- 데이터가 담겨있는 리스트를 앞에서 부터 순차적으로 비교하여 원하는 데이터를 찾는 방법
+
+**분석**
+
+- O(n)
 - - -

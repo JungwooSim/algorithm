@@ -5,6 +5,7 @@ import me.study.dynamicprogramming.DynamicProgramming;
 import me.study.merge_sort.MergeSort;
 import me.study.quick_sort.QuickSort;
 import me.study.recursivecall.RecursiveCall;
+import me.study.sequential_search.SequentialSearch;
 
 import java.util.ArrayList;
 
@@ -101,11 +102,16 @@ public class Main {
         /*
         Binary Search
          */
-        BinarySearch binarySearch = new BinarySearch();
-        Integer[] sortedData = {1,2,3,4,5,6,7,8,9,10};
-//        System.out.println(binarySearch.binary(sortedData, 10));
-        for (Integer value : sortedData) {
-            System.out.println(binarySearch.binary(sortedData, value));
-        }
+//        BinarySearch binarySearch = new BinarySearch();
+//        Integer[] sortedData = {1,2,3,4,5,6,7,8,9,10};
+////        System.out.println(binarySearch.binary(sortedData, 10));
+//        for (Integer value : sortedData) {
+//            System.out.println(binarySearch.binary(sortedData, value));
+//        }
+        /*
+        Sequential Search
+         */
+        SequentialSearch sequentialSearch = new SequentialSearch();
+        System.out.println(sequentialSearch.sequential(data, 3));
     }
 }
