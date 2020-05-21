@@ -146,10 +146,52 @@ palindrome이란, 앞으로 읽으나 거꾸로 읽으나 동일한 단어 또�
     Big-O : O(log n)
 - - -
 ### Sequential Search
-
 - 데이터가 담겨있는 리스트를 앞에서 부터 순차적으로 비교하여 원하는 데이터를 찾는 방법
 
 **분석**
 
 - O(n)
 - - -
+### Graph
+- 실제 세계의 현상이나 사물을 정점(Vertex) 또는 노드(Node)와 간선(Edge)로 표현하기 위해 사용
+
+**용어**
+
+- 주 용어
+    - Node : 위치를 말함. Vertex(정점)이라고도 함.
+    - Edge : 위치 간의 관계를 표시한 선으로 노드를 연결한 선이라고 보면 된다.(link, branch 라고도 한다)
+    - Adjacent Vertex : Edge로 직접 연결된 Node
+- 참고 용어
+    - Degree : 무방향 그래프에서 하나의 Node에 인접한 Node의 수
+    - In-Degree : 방향 그래프의 외부에서 오는 Edge의 수
+    - Out-Degree : 방향 그래프에서 외부로 향하는 Edge의 수
+    - Path Length : 경로를 구성하기 위해 사용된 Edge의 수
+    - Simple Path : 처음 Node와 끝 Node를 제외하고 중복된 Node가 없는 경로
+    - Cycle : simple path의 start node와 end node가 동일한 경우
+
+**graph 종류**
+
+- Undirected Graph
+    - 방향이 없는 그래프
+    - Edge를 통해 Node는 양방향으로 갈 수 있다.
+    - Node가 A → B로 연결되어 있을 경우, (A, B) 또는 (B, A)로 표기한다.
+- Directed Graph
+    - Edge에 방향이 있는 그래프
+    - Node가 A→B 방향으로 Edge가 연결되어 있을 경우, <A, B>로 표기한다.( <B , A> 와는 다르다.)
+- Weighted Graph OR Network
+    - Edge에 비용 또는 가중치가 할당된 그래프
+- Connected Graph AND Disconnected Graph
+    - Connected Graph
+        - 무방향 그래프에 있는 모든 Node에 대해 항상 경로가 존재하는 경우
+    - DisConnected Graph
+        - 무방향 그래프에서 특정 Node에 대해 경로가 존재하지 않는 경우
+- Cycle Graph AND Acyclic Graph
+    - Cycle Graph
+        - 단순 경로의 start node와 end node가 동일한 경우
+    - Acycil Graph
+        - Cycle이 없는 경우
+- Complete Graph
+    - 모든 Node가 서로 연결되어 있는 그래프
+    
+**그래프와 트리의 차이**<br>
+<img src="/img/graph_img_1.png" width="500px;">
