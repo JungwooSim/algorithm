@@ -188,10 +188,21 @@ palindrome이란, 앞으로 읽으나 거꾸로 읽으나 동일한 단어 또�
 - Cycle Graph AND Acyclic Graph
     - Cycle Graph
         - 단순 경로의 start node와 end node가 동일한 경우
-    - Acycil Graph
+    - acyclic Graph
         - Cycle이 없는 경우
 - Complete Graph
     - 모든 Node가 서로 연결되어 있는 그래프
     
 **그래프와 트리의 차이**<br>
 <img src="/img/graph_img_1.png" width="500px;">
+- - -
+### Breadth-Frist Search
+
+- 정점들과 **같은 레벨**에 있는 노드들을 먼저 탐색하는 방식### Breadth-Frist Search<br>
+<img src="/img/breadth-first-1.png" width="500px;">
+
+**분석**<br>
+- node count : V
+- edge count : E
+    - V + E 만큼 반복이 수행된다. 그러므로 O(V+E) 가 된다.
+

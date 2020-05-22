@@ -1,6 +1,7 @@
 package me.study;
 
 import me.study.binary_search.BinarySearch;
+import me.study.breadth_first_search.BreadthFirstSearch;
 import me.study.dynamicprogramming.DynamicProgramming;
 import me.study.merge_sort.MergeSort;
 import me.study.quick_sort.QuickSort;
@@ -111,7 +112,15 @@ public class Main {
         /*
         Sequential Search
          */
-        SequentialSearch sequentialSearch = new SequentialSearch();
-        System.out.println(sequentialSearch.sequential(data, 3));
+//        SequentialSearch sequentialSearch = new SequentialSearch();
+//        System.out.println(sequentialSearch.sequential(data, 3));
+
+        /*
+        Breadth First Search - BFS
+         */
+        BreadthFirstSearch breadthFirstSearch = new BreadthFirstSearch();
+        breadthFirstSearch.setData();
+        breadthFirstSearch.BFS();
+
     }
 }
