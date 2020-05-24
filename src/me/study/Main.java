@@ -3,6 +3,7 @@ package me.study;
 import me.study.binary_search.BinarySearch;
 import me.study.breadth_first_search.BreadthFirstSearch;
 import me.study.dynamicprogramming.DynamicProgramming;
+import me.study.greedy_algorithm.GreedyAlgorithm;
 import me.study.merge_sort.MergeSort;
 import me.study.quick_sort.QuickSort;
 import me.study.recursivecall.RecursiveCall;
@@ -118,9 +119,15 @@ public class Main {
         /*
         Breadth First Search - BFS
          */
-        BreadthFirstSearch breadthFirstSearch = new BreadthFirstSearch();
-        breadthFirstSearch.setData();
-        breadthFirstSearch.BFS();
+//        BreadthFirstSearch breadthFirstSearch = new BreadthFirstSearch();
+//        breadthFirstSearch.setData();
+//        breadthFirstSearch.BFS();
 
+        /*
+        Greedy Algorithm
+         */
+        GreedyAlgorithm greedyAlgorithm = new GreedyAlgorithm();
+//        greedyAlgorithm.coinProblem();
+        greedyAlgorithm.fractionalKnapsackProblem();
     }
 }

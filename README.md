@@ -196,13 +196,33 @@ palindrome이란, 앞으로 읽으나 거꾸로 읽으나 동일한 단어 또�
 **그래프와 트리의 차이**<br>
 <img src="/img/graph_img_1.png" width="500px;">
 - - -
-### Breadth-Frist Search
+### Breadth-First Search
 
-- 정점들과 **같은 레벨**에 있는 노드들을 먼저 탐색하는 방식### Breadth-Frist Search<br>
-<img src="/img/breadth-first-1.png" width="500px;">
+- 정점들과 **같은 레벨**에 있는 노드들을 먼저 탐색하는 방식### Breadth-First Search<br>
+<img src="/img/breadth-first-1.png" width="400px;">
 
-**분석**<br>
+**분석**
 - node count : V
 - edge count : E
     - V + E 만큼 반복이 수행된다. 그러므로 O(V+E) 가 된다.
+- - -
+### Greedy Algorithm
+
+- 최적이 해에 가까운 길을 구하기 위해 사용된다.
+- **여러 경우 중 한가지 선택해야 될 때, 매순간 최적이라고 생각되는 경우를 선택하는 방식으로 진행해서, 최종적인 값을 구하는 방식**
+
+**Ex1. 동전 문제**
+
+- 지불해야 되는 값이 4720원 일 때, 각각의 동전 10, 50, 100, 500이 있을때 동전의 수가 가장 적게 지불하기
+
+**Ex2. Fractional Knapsack Problem**
+
+- 무게 제한이 K인 배낭에 최대 가치를 가지도록 물건을 넣는 문제
+- 물건은 쪼갤 수 있으므로 물건의 일부분이 배낭에 넣어질 수 있다.
+
+**한계**
+
+- 근사치 추정에 활용
+    - 반드시 최적의 해를 구할 수 있는 것은 아니다.
+    - 최적의 해에 **가까운 값**을 구할 수 있는 방법 중 한가지 이다.
 
