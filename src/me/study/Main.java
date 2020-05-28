@@ -2,6 +2,7 @@ package me.study;
 
 import me.study.binary_search.BinarySearch;
 import me.study.breadth_first_search.BreadthFirstSearch;
+import me.study.dijkstra_algorithm.DijkstraAlgorithm;
 import me.study.dynamicprogramming.DynamicProgramming;
 import me.study.greedy_algorithm.GreedyAlgorithm;
 import me.study.merge_sort.MergeSort;
@@ -126,8 +127,14 @@ public class Main {
         /*
         Greedy Algorithm
          */
-        GreedyAlgorithm greedyAlgorithm = new GreedyAlgorithm();
+//        GreedyAlgorithm greedyAlgorithm = new GreedyAlgorithm();
 //        greedyAlgorithm.coinProblem();
-        greedyAlgorithm.fractionalKnapsackProblem();
+//        greedyAlgorithm.fractionalKnapsackProblem();
+        /*
+        Dijkstra Algorithm
+         */
+        DijkstraAlgorithm dijkstraAlgorithm = new DijkstraAlgorithm();
+        dijkstraAlgorithm.setData();
+        dijkstraAlgorithm.dijkstra();
     }
 }
