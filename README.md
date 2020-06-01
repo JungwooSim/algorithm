@@ -230,8 +230,43 @@ palindrome이란, 앞으로 읽으나 거꾸로 읽으나 동일한 단어 또�
 - Priority Queue 를 활용한 알고리즘
     - 우선순위 큐는 MinHeap 방식을 활용해서, 현재 가장 짧은 거리를 가진 노드 정보를 먼저 꺼내게 된다.
     - 우선순위 큐에서 꺼낸 노드와 배열에 저장된 노드를 비교하여 최단거리를 찾은 후 배열의 값을 갱신함으로써 배열에는 최단거리의 값이 남게 된다.
+
 **분석**
 
 - 모든 Edge의 weight 를 계산해야 하므로 O(E)의 시간 복잡도가 필요 (E : Edge)
 - 그리고 MinHeap에서 발생하는 시간 복잡도는 O(E log E)가 된다. (E : Edge)
 - 그러므로, 총 시간 복잡도는 O(E log E) 이다.
+- - -
+### Spanning Tree - 신장 트리
+
+- 모든 노드가 연결되어 있으면서 트리의 속성을 만족하는 그래프 (단, Cycle이 있으면 안됨)
+
+**Minimum Spanning Tree(MST) - 최소 신장 트리**
+
+- Spanning Tree 중에서, Edge의 합이 최소인 Tree를 말한다.
+
+**MST Algorithm**
+
+- 최소 신장 트리를 찾는 알고리즘
+- 대표적으로 Kruskal's Algorithm (크루스칼), Prim's Algorithm(프림) 이 있다.
+
+**Kruskal's Algorithm**
+
+1. 모든 Node를 **독립적인 집합**으로 만든다.
+2. 모든 Edge를 weight 기준으로 정렬 후 weight 가 낮은 Edge 부터 양 끝의 Node 를 **비교**
+3. 두 Node의 최상위(root) Node를 확인하고 서로 다른 경우 두 Node를 연결
+
+**Union-Find Algorithm**
+
+- Disjoint Set을 표현할 때 사용하는 알고리즘
+    - Disjoint Set?
+        - 서로 중복되지 않는 부분 집합들로 나눠진 원소들에 대한 정보를 저장하고 조작하는 자료구조
+        - 또는, 공통 원소가 없는 상호 베타적인 부분 집합들로 나눠진 원소 집합들에 대한 자료구조를 의미
+- 트리 구조에서 Node들 중 연결된 Node를 찾거나, Node들을 서로 연결할 때 사용
+- 3가지 기능으로 구성
+    - 초기화
+        - n개의 원소가 개별 집합을 이루도록 하는 기능
+    - Union
+        - 두 개별 집합을 하나로 합침
+    - Find
+        - 여러 Node가 존재할 때, 두 개의 Node를 선택해서 현재 두 Node가 서로 같은 그래프(집합)에 속하는지 판별하기 위해 각 그룹의 최상단(root) 원소를 확인
