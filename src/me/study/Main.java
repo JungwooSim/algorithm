@@ -9,6 +9,7 @@ import me.study.merge_sort.MergeSort;
 import me.study.quick_sort.QuickSort;
 import me.study.recursivecall.RecursiveCall;
 import me.study.sequential_search.SequentialSearch;
+import me.study.spanning_Tree.KruskalAlgorithm;
 
 import java.util.ArrayList;
 
@@ -133,8 +134,14 @@ public class Main {
         /*
         Dijkstra Algorithm
          */
-        DijkstraAlgorithm dijkstraAlgorithm = new DijkstraAlgorithm();
-        dijkstraAlgorithm.setData();
-        dijkstraAlgorithm.dijkstra();
+//        DijkstraAlgorithm dijkstraAlgorithm = new DijkstraAlgorithm();
+//        dijkstraAlgorithm.setData();
+//        dijkstraAlgorithm.dijkstra();
+
+        /*
+        Kruskal Algorithm
+         */
+        KruskalAlgorithm kruskalAlgorithm = new KruskalAlgorithm();
+        kruskalAlgorithm.makeGraph();
     }
 }

@@ -270,3 +270,28 @@ palindrome이란, 앞으로 읽으나 거꾸로 읽으나 동일한 단어 또�
         - 두 개별 집합을 하나로 합침
     - Find
         - 여러 Node가 존재할 때, 두 개의 Node를 선택해서 현재 두 Node가 서로 같은 그래프(집합)에 속하는지 판별하기 위해 각 그룹의 최상단(root) 원소를 확인
+- 고려해야될 점
+    - Union 순서에 따라서, 최악의 경우 Linked List와 같은 형태가 될 수 있다. 이 때는 Find, Union 을 수행할 때 시간 복잡도가 O(N)이 될 수 있다.
+    - **이러한 문제점을 보완하기 위해 union-by-rank, path compression 알고리즘을 사용한다.**
+    - 위 알고리즘을 사용하면 시간 복잡도는 O(M log^* N)이 된다.
+        - log^* N 은 거의 O(1), 즉 상수값에 가깝다. (증명되어있으나 과정은 어려워서 생략)
+
+**union-by-rank Algorithm**
+
+- 각 트리에 대해 높이(rank)를 기억한다.
+- Union 시 두 트리의 rank를 비교 후 다르면  높이가 큰 곳에 작은 트리를 붙이게 된다.
+
+    <img src="/img/union_by_rank_img_1.png">
+
+- rank가 h - 1 인 두 개의 트리를 합칠 때는 한 쪽의 트리의 rank에 1을 증가시키고 다른 한 쪽의 트리에 해당 트리를 붙인다.
+
+    <img src="/img/union_by_rank_img_2.png">
+
+- 이 알고리즘을 활용하게 되면 시간 복잡도가 O(N) → O(log N)으로 개선할 수 있다.
+
+**path compression Algorithm**
+
+- Find 를 실행한 Node 에서 거쳐간 Node 를 Root Node 에 다이렉트로 연결하는 방법
+- Find 를 실행한 노드는 이후 부터 Root Node 를 한번에 알 수 있다.
+
+    <img src="/img/path_compression_img_1.png">
