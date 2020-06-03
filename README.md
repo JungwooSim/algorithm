@@ -294,4 +294,15 @@ palindrome이란, 앞으로 읽으나 거꾸로 읽으나 동일한 단어 또�
 - Find 를 실행한 Node 에서 거쳐간 Node 를 Root Node 에 다이렉트로 연결하는 방법
 - Find 를 실행한 노드는 이후 부터 Root Node 를 한번에 알 수 있다.
 
-    <img src="/img/path_compression_img_1.png">
+    <img src="/img/path_compression_img_1.png" width="500px;">
+
+**분석**
+
+- 총 3가지 시간 복잡도를 계산할 수 있다.
+    - 기초 셋팅
+        - 시간 복잡도 : O(N) - for 문이 node 수 만큼 반복하기 때문에
+    - 그래프 정렬
+        - 시간 복잡도 : O(E log E) - Edge의 Weight 기준으로 정렬하는 과정
+    - Union-Find Algorithm
+        - O(1) - 위에서 설명
+- 정리하면, Kruskal's Algorithm 의 시간 복잡도는 O(E log E) 이다.

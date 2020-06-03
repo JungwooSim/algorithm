@@ -143,5 +143,6 @@ public class Main {
          */
         KruskalAlgorithm kruskalAlgorithm = new KruskalAlgorithm();
         kruskalAlgorithm.makeGraph();
+        kruskalAlgorithm.kruskal();
     }
 }
