@@ -306,3 +306,13 @@ palindrome이란, 앞으로 읽으나 거꾸로 읽으나 동일한 단어 또�
     - Union-Find Algorithm
         - O(1) - 위에서 설명
 - 정리하면, Kruskal's Algorithm 의 시간 복잡도는 O(E log E) 이다.
+
+**Prim's Algorithm**
+
+- Random으로 Start Node 를 선택 후, Start Node 에서 인접한 Edge 중 최소 weight로 연결된 Node를 선택하고 해당 Node 에서 다시 최소 weight 를 선택하는 방식으로 Spanning Tree 를 확장해가는 방식
+
+**Kruskal's Algorithm 과 Prim's Algorithm 비교**
+
+- 두 알고리즘 모두 Greed Algorihtm 을 기초로 하고 있음. (당장 눈 앞의 최소 비용을 선택하여, 최적의 솔루션을 찾음)
+- Kruskal's Algorithm 은 가장 weight가 작은 간선부터 선택하면서 MST를 구함
+- Prim's Algorithm 는 특정 Node에서 시작하여, 해당 Node에서 가장 weight가 작은 edge를 선택하고, 이를 반복하는 방식
